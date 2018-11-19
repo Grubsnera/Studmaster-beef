@@ -1,0 +1,220 @@
+FILE std,resident
+OUTPUT sm3
+#BLINKER EXE DUAL
+BLINKER INCREMENTAL OFF
+BLINKER ENVIRONMENT OVERRIDE
+BLINKER OVERLAY OPSIZE 64
+BLINKER OVERLAY PAGEFRAME ON
+BLI EXE CLI F:100
+STACK 7168
+SECTION INTO sm3
+BEGINAREA
+
+   FILE errorsys
+   FILE stdpubl
+   FILE stdfunk
+   FILE stdstar
+   FILE stddryf
+   FILE stdconv
+   FILE stddatu
+   FILE sm3conv
+   FILE sm3crea
+   FILE sm3load
+   FILE stdwaar
+   FILE stdsamp
+   FILE stdreek
+   FILE stdkode
+   FILE sm3ooja
+   FILE sm3isda
+   FILE sm3idnu
+   FILE sm3pick
+
+   FILE stdedit
+   FILE stdinde
+   FILE stddriv
+   FILE stdfile
+   FILE sm3idfo
+   FILE sm3idma
+   FILE sm3veld
+   FILE sm3list
+   FILE sm3groe
+   FILE sm3funk
+   FILE sm3rass
+   FILE sm3selg
+   FILE sm3eiev
+
+   FILE stdhmen
+   FILE stddexi
+
+   FILE stdconf
+   FILE stdmenu
+   FILE stddbfs
+   FILE stdfiel
+   FILE stdntxs
+   FILE stdhelp
+
+   FILE stdsuba
+   FILE sm3edit
+   FILE sm3alma
+   FILE sm3seke
+   FILE sm3sekg
+   FILE sm3note
+   FILE sm3idnr
+   FILE sm3stam
+   FILE sm3ssab
+   FILE sm3dekk
+   FILE sm3dena
+   FILE sm3deki
+   FILE sm3dekv
+   FILE sm3preg
+   FILE sm3hdek
+   FILE sm3ssac
+   FILE sm3verw
+   FILE sm3dekl
+   FILE sm3drag
+   FILE sm3geba
+   FILE sm3gebo
+   FILE sm3deca
+   FILE sm3opca
+   FILE sm3opdi
+   FILE sm3teeg
+   FILE sm3deku
+   FILE sm3gebk
+   FILE sm3bege
+   FILE sm3tedi
+
+   FILE stdsubb
+   FILE sm3weid
+   FILE sm3mass
+   FILE sm3moem
+   FILE sm3indc
+   FILE sm3inda
+   FILE sm3hand
+   FILE sm3indg
+   FILE sm3fasi
+   FILE sm3fasg
+   FILE sm3fasf
+   FILE sm3fasb
+   FILE sm3fase
+   FILE sm3fasc
+   FILE sm3fasm
+   FILE sm3fask
+
+   FILE stdsubc
+   FILE sm3weeg
+   FILE sm3gema
+   FILE sm3gere
+   FILE sm3prod
+   FILE sm3aank
+   FILE sm3sale
+   FILE sm3addr
+   FILE sm3klie
+   FILE sm3tipe
+   FILE sm3verm
+   FILE sm3verl
+   FILE sm3plak
+   FILE sm3labg
+   FILE sm3labe
+   FILE sm3labp
+   FILE sm3merk
+   FILE sm3scal
+    FILE sm3trut
+    FILE sm3rudd
+    FILE sm3libr
+    FILE sm3bolu
+    FILE sm3mash
+
+   FILE stdsubd
+   FILE sm3waar
+   FILE sm3opme
+   FILE sm3rede
+   FILE sm3merm
+   FILE sm3mark
+   FILE sm3meen
+   FILE sm3megr
+   FILE sm3mspe
+   FILE sm3mspr
+
+   FILE stdsube
+   FILE sm3wely
+   FILE sm3ownr
+   FILE sm3prog
+   FILE sm3pedi
+   FILE sm3voll
+   FILE sm3suef
+   FILE sm3veeg
+   FILE sm3tabe
+   FILE sm3veil
+   FILE sm3insp
+   FILE sm3oord
+   FILE sm3vore
+
+   FILE stdsubf
+
+   FILE stdsubg
+   FILE sm3kale
+   FILE sm3jaar
+   FILE sm3siek
+    FILE sm3sibe
+   FILE sm3beha
+    FILE sm3besi
+   FILE sm3veea
+    FILE sm3veel
+   FILE sm3inen
+
+   FILE stdsubh
+   FILE stdvast
+   FILE stdnaam
+   FILE sm3kalf
+   FILE sm3stan
+   FILE sm3selr
+   FILE sm3stad
+   FILE sm3wisd
+   FILE sm3opsk
+   FILE stdindx
+   FILE sm3skep
+   FILE sm3gemm
+   FILE sm3koei
+   FILE sm3idid
+   FILE sm3acti
+   FILE sm3mail
+   FILE sm3maan
+   FILE sm3flop
+   FILE sm3impo
+    FILE sm3move
+    FILE sm3brei
+   FILE sm3dubb
+   FILE sm3lett
+   FILE sm3vokl
+
+   FILE stdsubi
+   FILE stddata
+   FILE sm3rasu
+   FILE stdcolo
+   FILE stdpset
+   FILE stddruk
+   FILE stdaand
+   FILE stdtaal
+   FILE stdsyst
+   FILE stdabou
+
+   FILE stdexit
+   FILE stdform
+   FILE stdback
+   FILE stdrest
+
+   FILE cm52
+   FILE cmx52
+
+   ALLOCATE extend
+   ALLOCATE overcl
+   ALLOCATE flexfile
+   ALLOCATE cm52
+   ALLOCATE cmx52
+
+
+ENDAREA
+
+#@CL520MAX
+
+LIB ct

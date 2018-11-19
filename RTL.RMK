@@ -1,0 +1,167 @@
+.prg.obj:
+ CLIPPER $** /n/a/m
+
+errorsys.obj: errorsys.prg
+stdstar.obj: stdstar.prg
+std.obj: std.prg
+stdreek.obj: stdreek.prg
+stdconv.obj: stdconv.prg
+stdwaar.obj: stdwaar.prg
+stddryf.obj: stddryf.prg
+stdkode.obj: stdkode.prg
+stdedit.obj: stdedit.prg
+stdfunk.obj: stdfunk.prg
+sm3idfo.obj: sm3idfo.prg
+sm3veld.obj: sm3veld.prg
+sm3groe.obj: sm3groe.prg
+sm3funk.obj: sm3funk.prg
+sm3crea.obj: sm3crea.prg
+sm3load.obj: sm3load.prg
+stdinde.obj: stdinde.prg
+sm3rass.obj: sm3rass.prg
+sm3selg.obj: sm3selg.prg
+sm3eiev.obj: sm3eiev.prg
+
+stdhmen.obj: stdhmen.prg
+stddexi.obj: stddexi.prg
+
+stdconf.obj: stdconf.prg
+stdmenu.obj: stdmenu.prg
+stddbfs.obj: stddbfs.prg
+stdfiel.obj: stdfiel.prg
+stdntxs.obj: stdntxs.prg
+stdhelp.obj: stdhelp.prg
+stdindx.obj: stdindx.prg
+
+stdsuba.obj: stdsuba.prg
+sm3edit.obj: sm3edit.prg
+sm3alma.obj: sm3alma.prg
+sm3seke.obj: sm3seke.prg
+sm3sekg.obj: sm3sekg.prg
+sm3note.obj: sm3note.prg
+sm3idnr.obj: sm3idnr.prg
+sm3stam.obj: sm3stam.prg
+sm3ssab.obj: sm3ssab.prg
+sm3dekk.obj: sm3dekk.prg
+sm3dena.obj: sm3dena.prg
+sm3deki.obj: sm3deki.prg
+sm3dekv.obj: sm3dekv.prg
+sm3drab.obj: sm3drab.prg
+sm3hdek.obj: sm3hdek.prg
+sm3ssac.obj: sm3ssac.prg
+sm3verw.obj: sm3verw.prg
+sm3dekl.obj: sm3dekl.prg
+sm3drag.obj: sm3drag.prg
+sm3geba.obj: sm3geba.prg
+sm3gebo.obj: sm3gebo.prg
+sm3deca.obj: sm3deca.prg
+sm3opca.obj: sm3opca.prg
+sm3opdi.obj: sm3opdi.prg
+sm3teeg.obj: sm3teeg.prg
+sm3deku.obj: sm3deku.prg
+sm3gebk.obj: sm3gebk.prg
+sm3bege.obj: sm3bege.prg
+sm3tedi.obj: sm3tedi.prg
+
+stdsubb.obj: stdsubb.prg
+sm3weid.obj: sm3weid.prg
+sm3mass.obj: sm3mass.prg
+sm3moem.obj: sm3moem.prg
+sm3indc.obj: sm3indc.prg
+sm3inda.obj: sm3inda.prg
+sm3hand.obj: sm3hand.prg
+sm3indg.obj: sm3indg.prg
+sm3fasg.obj: sm3fasg.prg
+sm3fasf.obj: sm3fasf.prg
+sm3fasb.obj: sm3fasb.prg
+sm3fase.obj: sm3fase.prg
+sm3fasc.obj: sm3fasc.prg
+sm3fask.obj: sm3fask.prg
+
+stdsubc.obj: stdsubc.prg
+sm3weeg.obj: sm3weeg.prg
+sm3gere.obj: sm3gere.prg
+sm3sucb.obj: sm3sucb.prg
+sm3aank.obj: sm3aank.prg
+sm3verk.obj: sm3verk.prg
+sm3addr.obj: sm3addr.prg
+sm3klie.obj: sm3klie.prg
+sm3tipe.obj: sm3tipe.prg
+sm3verm.obj: sm3verm.prg
+sm3verl.obj: sm3verl.prg
+sm3plak.obj: sm3plak.prg
+sm3labg.obj: sm3labg.prg
+sm3labe.obj: sm3labe.prg
+sm3labp.obj: sm3labp.prg
+sm3merk.obj: sm3merk.prg
+
+stdsubd.obj: stdsubd.prg
+sm3waar.obj: sm3waar.prg
+sm3opme.obj: sm3opme.prg
+sm3rede.obj: sm3rede.prg
+sm3merm.obj: sm3merm.prg
+sm3mark.obj: sm3mark.prg
+sm3meen.obj: sm3meen.prg
+sm3megr.obj: sm3megr.prg
+
+stdsube.obj: stdsube.prg
+sm3wely.obj: sm3wely.prg
+sm3ownr.obj: sm3ownr.prg
+sm3prog.obj: sm3prog.prg
+sm3pedi.obj: sm3pedi.prg
+sm3voll.obj: sm3voll.prg
+sm3suef.obj: sm3suef.prg
+sm3veeg.obj: sm3veeg.prg
+sm3tabe.obj: sm3tabe.prg
+sm3veil.obj: sm3veil.prg
+sm3insp.obj: sm3insp.prg
+sm3oord.obj: sm3oord.prg
+sm3vore.obj: sm3vore.prg
+
+stdsubf.obj: stdsubf.prg
+
+stdsubg.obj: stdsubg.prg
+sm3kale.obj: sm3kale.prg
+sm3jaar.obj: sm3jaar.prg
+sm3siek.obj: sm3siek.prg
+sm3beha.obj: sm3beha.prg
+sm3veea.obj: sm3veea.prg
+sm3veev.obj: sm3veev.prg
+
+stdsubh.obj: stdsubh.prg
+stdvast.obj: stdvast.prg
+stdnaam.obj: stdnaam.prg
+sm3kalf.obj: sm3kalf.prg
+sm3stan.obj: sm3stan.prg
+sm3selr.obj: sm3selr.prg
+sm3stad.obj: sm3stad.prg
+sm3wisd.obj: sm3wisd.prg
+sm3opsk.obj: sm3opsk.prg
+stdindx.obj: stdindx.prg
+sm3skep.obj: sm3skep.prg
+sm3gemm.obj: sm3gemm.prg
+sm3koei.obj: sm3koei.prg
+sm3idid.obj: sm3idid.prg
+sm3maan.obj: sm3maan.prg
+sm3flop.obj: sm3flop.prg
+sm3impo.obj: sm3impo.prg
+sm3dubb.obj: sm3dubb.prg
+sm3lett.obj: sm3lett.prg
+
+stdsubi.obj: stdsubi.prg
+stddata.obj: stddata.prg
+stdcolo.obj: stdcolo.prg
+stddruk.obj: stddruk.prg
+stdaand.obj: stdaand.prg
+stdtaal.obj: stdtaal.prg
+stdsyst.obj: stdsyst.prg
+stdabou.obj: stdabou.prg
+
+stdexit.obj: stdexit.prg
+stdback.obj: stdback.prg
+stdform.obj: stdform.prg
+stdrest.obj: stdrest.prg
+stdbace.obj: stdbace.prg
+
+stde.exe: std.obj
+ RTLINK @rtl

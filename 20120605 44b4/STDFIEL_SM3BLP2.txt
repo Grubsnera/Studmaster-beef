@@ -1,0 +1,79 @@
+SM3BLP2,REKNR,001,C,10,0,Stamboek rekenaar nr,,,,Studbook computer nr,,,,@K!,0,0
+SM3BLP2,BIRDIR,002,N,14,8,GebMassa direk,,,,Birth mass direct,,,,@K!,0,0
+SM3BLP2,BIRDIRA,003,N,4,0,GebMassa akk,,,,Birth mass acc,,,,@K!,0,0
+SM3BLP2,BIRMAT,004,N,14,8,GebMassa maternaal,,,,Birth mass maternal,,,,@K!,0,0
+SM3BLP2,BIRMATA,005,N,4,0,GebMas maternaal akk,,,,Birth maternal acc,,,,@K!,0,0
+SM3BLP2,CALTEM,006,N,14,8,Kalftempo,,,,Calf tempo,,,,@K!,0,0
+SM3BLP2,CALTEMA,007,N,4,0,Kalftempo akk,,,,Calf tempo acc,,,,@K!,0,0
+SM3BLP2,WEADIR,008,N,14,8,205d direk,,,,205d direct,,,,@K!,0,0
+SM3BLP2,WEADIRA,009,N,4,0,205d akk,,,,205d acc,,,,@K!,0,0
+SM3BLP2,WEAMAT,010,N,14,8,205d maternaal,,,,205d maternal,,,,@K!,0,0
+SM3BLP2,WEAMATA,011,N,4,0,205d maternaal akk,,,,205d maternal acc,,,,@K!,0,0
+SM3BLP2,WEACOM,012,N,14,8,205d gekombineerd,,,,205d combined,,,,@K!,0,0
+SM3BLP2,YEADIR,013,N,14,8,365d direk,,,,365d direct,,,,@K!,0,0
+SM3BLP2,YEADIRA,014,N,4,0,365d akk,,,,365d acc,,,,@K!,0,0
+SM3BLP2,M18DIR,015,N,14,8,540d direk,,,,540d direct,,,,@K!,0,0
+SM3BLP2,M18DIRA,016,N,4,0,540d akk,,,,540d acc,,,,@K!,0,0
+SM3BLP2,FEEINT,017,N,14,8,Voerinname,,,,Feed intake,,,,@K!,0,0
+SM3BLP2,FEEINTA,018,N,4,0,Voerinname akk,,,,Feed intake acc,,,,@K!,0,0
+SM3BLP2,FEECON,019,N,14,8,Voeromset,,,,Feed conversion ratio,,,,@K!,0,0
+SM3BLP2,FEECONA,020,N,4,0,Voeromset akk,,,,Feed conversion ratio acc,,,,@K!,0,0
+SM3BLP2,FEEPRO,021,N,14,8,Voerwins,,,,Feed profit,,,,@K!,0,0
+SM3BLP2,FEEPROA,022,N,4,0,Voerwins akk,,,,Feed profit acc,,,,@K!,0,0
+SM3BLP2,MATWEI,023,N,14,8,Volwasse gewig,,,,Mature weight,,,,@K!,0,0
+SM3BLP2,MATWEIA,024,N,4,0,Volwasse gewig akk,,,,Mature weight acc,,,,@K!,0,0
+SM3BLP2,STA,025,N,14,8,Stayability,,,,Stayability,,,,@K!,0,0
+SM3BLP2,STAA,026,N,4,0,Stayability akk,,,,Stayability acc,,,,@K!,0,0
+SM3BLP2,ADGDIR,027,N,14,8,Gdt direk,,,,Adg direct,,,,@K!,0,0
+SM3BLP2,ADGDIRA,028,N,4,0,Gdt akk,,,,Adg acc,,,,@K!,0,0
+SM3BLP2,KLEDIR,029,N,14,8,Kleiber direk,,,,Kleiber direct,,,,@K!,0,0
+SM3BLP2,KLEDIRA,030,N,4,0,Kleiber akk,,,,Kleiber acc,,,,@K!,0,0
+SM3BLP2,SCRDIR,031,N,14,8,Skrotum direk,,,,Scrotum direct,,,,@K!,0,0
+SM3BLP2,SCRDIRA,032,N,4,0,Skrotum akk,,,,Scrotum acc,,,,@K!,0,0
+SM3BLP2,HGTDIR,033,N,14,8,Hoogte direk,,,,Height direct,,,,@K!,0,0
+SM3BLP2,HGTDIRA,034,N,4,0,Hoogte akk,,,,Height acc,,,,@K!,0,0
+SM3BLP2,BODLEN,035,N,14,8,Lengte direk,,,,Length direct,,,,@K!,0,0
+SM3BLP2,BODLENA,036,N,4,0,Lengte akk,,,,Length acc,,,,@K!,0,0
+SM3BLP2,IBCOEF,037,N,14,8,Inteelkoef,,,,Inbreed coef,,,,@K!,0,0
+SM3BLP2,IDNOMM,038,C,10,0,Id nommer,,,,Id number,,,,@K!,0,0
+SM3BLP2,ANIMNAME,039,C,30,0,Dier se naam,,,,Animal name,,,,@K!,0,0
+SM3BLP2,BDATE,040,D,8,0,Geboortedatum,,,,Birth date,,,,@K 999999,0,0
+SM3BLP2,GESLAG,041,C,1,0,Geslag,,,,Sex,,,,!,0,0
+SM3BLP2,IDVAAR,042,C,10,0,Vaar id nommer,,,,Sire id number,,,,@K!,0,0
+SM3BLP2,REKVAAR,043,C,10,0,Vaar rekenaar nommer,,,,Sire computer number,,,,@K!,0,0
+SM3BLP2,IDMOER,044,C,10,0,Moer Id nommer,,,,Dam Id number,,,,@K!,0,0
+SM3BLP2,REKMOER,045,C,10,0,Moer rekenaar nommer,,,,Dam computer number,,,,@K!,0,0
+SM3BLP2,ANALDATE,046,D,8,0,Ontledingsdatum,,,,Analysis date,,,,@K 99/99/99,0,0
+SM3BLP2,STATUS,047,C,1,0,Status,,,,Status,,,,!,0,0
+SM3BLP2,FATTHI,048,N,14,8,Vetdikte,,,,Fat thickness,,,,@K!,0,0
+SM3BLP2,FATTHIA,049,N,4,0,Vetdikte akk,,,,Fat thickness acc,,,,@K!,0,0
+SM3BLP2,EYEMUS,050,N,14,8,Oogspieroppervlak,,,,Eye muscle area,,,,@K!,0,0
+SM3BLP2,EYEMUSA,051,N,4,0,Oogspieroppervlak akk,,,,Eye muscle area acc,,,,@K!,0,0
+SM3BLP2,MARBLI,052,N,14,8,Marmering,,,,Marbling,,,,@K!,0,0
+SM3BLP2,MARBLIA,053,N,4,0,Marmering akk,,,,Marbling acc,,,,@K!,0,0
+SM3BLP2,AGEFIR,054,N,14,8,Oud eerste kalf,,,,Age first calving,,,,@K!,0,0
+SM3BLP2,AGEFIRA,055,N,4,0,Oud eerste kalf akk,,,,Age first calving acc,,,,@K!,0,0
+SM3BLP2,ICP,056,N,14,8,Tussenkalf periode,,,,Inter calving period,,,,@K!,0,0
+SM3BLP2,ICPA,057,N,4,0,Tussenkalf periode akk,,,,Inter calving period acc,,,,@K!,0,0
+SM3BLP2,COWPRO,058,N,14,8,Koeiwins,,,,Cow profit,,,,@K!,0,0
+SM3BLP2,COWPROA,059,N,4,0,Koeiwins akk,,,,Cow profit acc,,,,@K!,0,0
+SM3BLP2,DREPER,060,N,14,8,Dressering %,,,,Dressing %,,,,@K!,0,0
+SM3BLP2,DREPERA,061,N,4,0,Dressering % akk,,,,Dressing % acc,,,,@K!,0,0
+SM3BLP2,KGMEAT,062,N,14,8,Kg vleis,,,,Kg meat,,,,@K!,0,0
+SM3BLP2,KGMEATA,063,N,4,0,Kg vleis akk,,,,Kg meat acc,,,,@K!,0,0
+SM3BLP2,COWEFF,064,N,14,8,Koeidoeltreffendheid,,,,Cow efficiency,,,,@K!,0,0
+SM3BLP2,COWEFFA,065,N,4,0,Koeidoeltreffendheid akk,,,,Cow efficiency acc,,,,@K!,0,0
+SM3BLP2,POSWEA,066,N,14,8,Naspeen,,,,Post wean,,,,@K!,0,0
+SM3BLP2,POSWEAA,067,N,4,0,Naspeen akk,,,,Post wean acc,,,,@K!,0,0
+SM3BLP2,PROIND,068,N,14,8,Produksie indeks,,,,Production index,,,,@K!,0,0
+SM3BLP2,PROINDA,069,N,4,0,Produksie indeks akk,,,,Production index acc,,,,@K!,0,0
+SM3BLP2,COWEAS,070,N,14,8,Koei gemak kalf,,,,Cow ease,,,,@K!,0,0
+SM3BLP2,COWEASA,071,N,4,0,Koei gemak kalf akk,,,,Cow ease acc,,,,@K!,0,0
+SM3BLP2,COWMIL,072,N,14,8,Koei melk,,,,Cow milk,,,,@K!,0,0
+SM3BLP2,COWMILA,073,N,4,0,Koei melk akk,,,,Cow milk acc,,,,@K!,0,0
+SM3BLP2,COWGRO,074,N,14,8,Koei groei,,,,Cow growth,,,,@K!,0,0
+SM3BLP2,COWGROA,075,N,4,0,Koei groei akk,,,,Cow growth acc,,,,@K!,0,0
+SM3BLP2,COWHEI,076,N,14,8,Koei hoogte,,,,Cow height,,,,@K!,0,0
+SM3BLP2,COWHEIA,077,N,4,0,Koei hoogte akk,,,,Cow height acc,,,,@K!,0,0
+SM3BLP2,COWREP,078,N,14,8,Koei reproduksie,,,,Cow reproduction,,,,@K!,0,0
+SM3BLP2,COWREPA,079,N,4,0,Koei reproduksie akk,,,,Cow reproduction acc,,,,@K!,0,0

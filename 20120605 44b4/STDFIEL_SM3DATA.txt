@@ -1,0 +1,254 @@
+SM3DATA,IDNR,001,C,12,0,ID nommer,,,ID nommer,ID number,,,ID number,@!,1000,1000
+SM3DATA,REKNR,002,C,10,0,Registrasienommer,,Registrasie,nommer,Registration number,,Registration,number,@!,1013,1013
+SM3DATA,KALFBNR,003,C,10,0,Kalfboeknommer,Kalf,boek,nommer,Calf book number,Calf,book,number,@!,1014,1014
+SM3DATA,IDNAAM,004,C,35,0,Naam van dier,,,Naam van dier,Name of animal,,,Name of animal,@S30@!,1016,1016
+SM3DATA,IDVAAR,005,C,12,0,Vaar ID nommer,,Vaar,id nommer,Sire id number,,Sire,id number,@!,1020,1020
+SM3DATA,IDMOER,006,C,12,0,Moer ID nommer,,Moer,id nommer,Dam id number,,Dam,id number,@!,1025,1025
+SM3DATA,BLOEDLYN,007,C,2,0,Bloedlyn,,Bl,ln,Family code,,Fa,co,@!,1030,1030
+SM3DATA,GESLAG,008,C,1,0,Geslag,G,e,s,Sex,S,e,x,!,1035,1035
+SM3DATA,GENERASIE,009,C,2,0,Generasie,G,e,n,Generation,G,e,n,@!,1040,1040
+SM3DATA,GEBDATUM,010,D,8,0,Geboortedatum,,Geboorte,datum,Date of birth,,Date of,birth,99/99/99,1045,1045
+SM3DATA,GEBMASSA,011,N,2,0,Geboortemassa,,,Gm,Birth mass,,,Bm,99,1050,1050
+SM3DATA,IDATUM,012,D,8,0,Dek/KI datum,,Dek/KI,datum,Mating/AI date,,Mating/,AI date,99/99/99,1055,1055
+SM3DATA,MOUDERDOM,013,N,3,0,Maandouderdom,,Mnd,oud,Month age,,Mon,age,999,1058,1058
+SM3DATA,VAARKODE,014,C,1,0,Verwek deur,V,e,r,Service code,S,e,r,!,2000,2000
+SM3DATA,GEBSTAT,015,C,1,0,Geboortestatus,S,t,a,Birth status,S,t,a,!,2005,2005
+SM3DATA,TWEELING,016,C,1,0,Tweeling met,T,w,e,Twin with,T,w,i,!,2010,2010
+SM3DATA,BLOEDNR,017,C,10,0,Bloedtipering nr,Bloed,tipering,nommer,Bloodtyping number,Blood,typing,number,@!,2015,2015
+SM3DATA,KALFSTAT,018,C,2,0,Kalfstatus,,Ka,St,Calving status,,Ca,St,!!,2020,2020
+SM3DATA,KALFGEM,019,C,2,0,Gemak van kalwing,Ge,v,ka,Ease of calving,Ea,of,ca,!!,2025,2025
+SM3DATA,KALFINTERV,020,N,4,0,Kalfinterval,Kalf,inte,rval,Calving interval,Calf,inte,rval,9999,0,0
+SM3DATA,LKALFDATUM,021,D,8,0,Laaste kalfdatum,Laaste,kalf,datum,Last calving date,Last,calving,date,99/99/99,3001,3001
+SM3DATA,KALFAANTAL,022,N,3,0,Aantal kalwers,Aan,tal,kal,No. of calves,No,of,cal,999,3010,3010
+SM3DATA,MAMOERGEB,023,N,3,0,Moermassa geboorte,Moe,mas,geb,Dam mass at birth,Dam,mas,bir,999,2050,2050
+SM3DATA,MAMOERSPE,024,N,3,0,Moermassa by speen,Moe,mas,spe,Dam mass at wean,Dam,mas,wea,999,2055,2055
+SM3DATA,MPRESIND,025,N,3,0,Moer doelt.indeks,Moe,doe,ind,Dam efficiency index,Dam,eff,ind,999,2060,2060
+SM3DATA,GEMKALFIN,026,N,4,0,Gem. kalfinterval,Gem.,kalf,int.,Ave calving interval,Ave.,calf,int.,9999,3015,3015
+SM3DATA,GEMSPEENA,027,N,3,0,Aantal kalwers gespe,Aan,kalwers,gespeen,No. of calves weaned,No.,calves,weaned,999,3045,3045
+SM3DATA,GEMSPEENI,028,N,3,0,Gem. 205d indeks,Gem,205,ind,Ave. 205d index,Avg,205,ind,999,3051,3051
+SM3DATA,OUDEKALF,029,N,2,0,Oud eerste kalf,Ou,ee,ka,Age first calf,Ag,fi,ca,99,3000,3000
+SM3DATA,MWPROD,030,N,3,0,Mwprod.vermo‰,Mw.,pro,ver,Most like prod,Mos,lik,pro,999,3025,3025
+SM3DATA,PRODPJ,031,N,3,0,Produksie p.jaar,,Pro,pj,Production per year,,Pro,p.a,999,3030,3030
+SM3DATA,GEBMASV,032,N,4,1,Geb.mas.verhouding,Geb,mas,verh,Birth mass ratio,Bir,mass,rat,99.9,2014,2014
+SM3DATA,GEMDIND,033,N,3,0,Gem.doeltr.indeks,Gem,doe,ind,Ave efficiency index,Ave,eff,ind,999,3035,3035
+SM3DATA,GEMGMV,034,N,4,1,Gem.geb.massa verh.,Gem,gm,ver,Ave birth mass ratio,Ave,bm,rat,99.9,3040,3040
+SM3DATA,GEMRET,035,N,3,0,Goedkeurings %,,%,Ja,Approved %,,%,Yes,999,3066,3066
+SM3DATA,GEKEUR,036,C,1,0,Goedgekeur,,,J,Approved,,,Y,!,1060,1060
+SM3DATA,OPMERKING1,037,C,14,0,Opmerkings #1,,,Opmerkings #1,Remarks #1,,,Remarks #1,!!-!!-!!-!!-!!,1065,1065
+SM3DATA,OPMERKING2,038,C,14,0,Opmerkings #2,,,Opmerkings #2,Remarks #2,,,Remarks #2,!!-!!-!!-!!-!!,1070,1070
+SM3DATA,UITKREDE,039,C,2,0,Waar is dier kode,Wa,di,ko,Where is animal code,Wh,an,co,!!,1075,1075
+SM3DATA,UITKDATUM,040,D,8,0,Datum uit kudde,Datum,uit,kudde,Date left herd,Date,left,herd,99/99/99,1090,1090
+SM3DATA,INDEKSKODE,041,C,6,0,Indeksgroep (eie),Indeks,groep,eie,Index group (own),Index,group,own,@!,4000,4000
+SM3DATA,KOD100,042,C,3,0,100d voedingstatus,100,Voe,sta,100d feeding status,100,Fee,sta,!!!,4046,4046
+SM3DATA,DAT100,043,D,8,0,100d weegdatum,100d,weeg,datum,100d weigh date,100d,weigh,date,99/99/99,4010,4010
+SM3DATA,MAS100,044,N,3,0,100d massa,100,dae,mas,100d mass,100,day,mas,999,4015,4015
+SM3DATA,AAN100,045,N,3,0,100d tydgenote,100,dae,tyd,100d contemporaries,100,day,con,999,4020,4020
+SM3DATA,PLE100,046,N,3,0,100d rangorde,100,dae,ran,100d order,100,day,ord,999,4025,4025
+SM3DATA,OUD100,047,N,3,0,100d ouderdom,100,dae,oud,100d age,100,day,age,999,4030,4030
+SM3DATA,GMA100,048,N,3,0,100d gek.massa,100,gek,mas,100d corr. mass,100,cor,mas,999,4035,4035
+SM3DATA,GDO100,049,N,4,0,100d gdo,100,dae,GDO,100d ada,100,day,ada,9999,4040,4040
+SM3DATA,IND100,050,N,3,0,100d indeks,100,dae,ind,100d index,100,day,ind,999,4045,4045
+SM3DATA,KOD205,051,C,3,0,205d voedingstatus,205,voe,sta,205d feeding status,205,fee,sta,!!!,4091,4091
+SM3DATA,DAT205,052,D,8,0,205d weegdatum,205,dae,datum,205d weigh date,205,day,date,99/99/99,4055,4055
+SM3DATA,MAS205,053,N,3,0,205d massa,205,dae,mass,205d mass,205,day,mass,999,4060,4060
+SM3DATA,AAN205,054,N,3,0,205d tydgenote,205,dae,tydg,205d contemporaries,205,day,cont,999,4065,4065
+SM3DATA,PLE205,055,N,3,0,205d rangorde,205,dae,rang,205d order,205,day,order,999,4070,4070
+SM3DATA,OUD205,056,N,3,0,205d ouderdom,205,dae,oud,205d age,205,day,age,999,4075,4075
+SM3DATA,GMA205,057,N,3,0,205d gek.massa,205,dae,gmas,205d corr.mass,205,day,cmas,999,4080,4080
+SM3DATA,GDO205,058,N,4,0,205d gdo,205,dae,gdo,205d ada,205,day,ada,9999,4085,4085
+SM3DATA,IND205,059,N,3,0,205d indeks,205,dae,ind,205d index,205,day,ind,999,4090,4090
+SM3DATA,KOD365,060,C,3,0,365d voedingstatus,365,voe,sta,365d feeding status,365,fee,sta,!!!,4146,4146
+SM3DATA,DAT365,061,D,8,0,365d weegdatum,365,dae,datum,365d weigh date,365,day,date,99/99/99,4100,4100
+SM3DATA,MAS365,062,N,3,0,365d massa,365,dae,mass,365d mass,365,day,mass,999,4105,4105
+SM3DATA,AAN365,063,N,3,0,365d tydgenote,365,dae,tydg,365d contemporaries,365,day,cont,999,4110,4110
+SM3DATA,PLE365,064,N,3,0,365d rangorde,365,dae,rang,365d order,365,day,order,999,4115,4115
+SM3DATA,OUD365,065,N,3,0,365d ouderdom,365,dae,oud,365d age,365,day,age,999,4120,4120
+SM3DATA,GMA365,066,N,3,0,365d gek.massa,365,dae,gmas,365d corr.mass,365,day,cmas,999,4125,4125
+SM3DATA,GDO365,067,N,4,0,365d gdo,365,dae,gdo,365d ada,365,day,ada,9999,4130,4130
+SM3DATA,IND365,068,N,3,0,365d indeks,365,dae,ind,365d index,365,day,ind,999,4135,4135
+SM3DATA,KOD540,069,C,3,0,540d voedingstatus,540,voe,sta,540d feeding status,540,fee,sta,!!!,4181,4181
+SM3DATA,DAT540,070,D,8,0,540d weegdatum,540,dae,datum,540d weigh date,540,day,date,99/99/99,4149,4149
+SM3DATA,MAS540,071,N,3,0,540d massa,540,dae,mass,540d mass,540,day,mass,999,4150,4150
+SM3DATA,AAN540,072,N,3,0,540d tydgenote,540,dae,tydg,540d contemporaries,540,day,cont,999,4155,4155
+SM3DATA,PLE540,073,N,3,0,540d rangorde,540,dae,rang,540d order,540,day,order,999,4160,4160
+SM3DATA,OUD540,074,N,3,0,540d ouderdom,540,dae,oud,540d age,540,day,age,999,4165,4165
+SM3DATA,GMA540,075,N,3,0,540d gek.massa,540,dae,gmas,540d corr.mass,540,day,cmas,999,4170,4170
+SM3DATA,GDO540,076,N,4,0,540d gdo,540,dae,gdo,540d ada,540,day,ada,9999,4175,4175
+SM3DATA,IND540,077,N,3,0,540d indeks,540,dae,ind,540d index,540,day,ind,999,4180,4180
+SM3DATA,TOGGLE1,078,C,6,0,Tydelike merk,,Tyd,merk,Temporary mark,,Temp,mark,@!,1080,1080
+SM3DATA,TOGGLE2,079,C,1,0,Merkveranderlike 2,,,M,Mark Variable 2,,,M,!,0,0
+SM3DATA,FASEKODE,080,C,6,0,Fasegroep,,Fase,groep,Phase Group,,Phase,group,@!,5000,5000
+SM3DATA,BEGDATUM,081,D,8,0,Toets begindatum,Toets,begin,datum,Test starting date,Test,starting,date,99/99/99,5020,5020
+SM3DATA,VORDATUM,082,D,8,0,Toets vorige datum,Toets,vorige,datum,Test previous date,Test,previous,date,99/99/99,0,0
+SM3DATA,BEGMASSA,083,N,3,0,Toets beginmassa,Toe,beg,mas,Test starting mass,Tes,sta,mas,999,5025,5025
+SM3DATA,VORMASSA,084,N,3,0,Toets vorige massa,Toe,vor,mas,Test previous mass,Tes,pre,mas,999,0,0
+SM3DATA,VOEROMSET,085,N,8,3,Voeromset,,Voer,omset,Feed conversion,,Feed,conversion,9999.999,5085,5085
+SM3DATA,VOEROMSETI,086,N,3,0,Voeromset indeks,Voe,oms,ind,Feed conv. index,Fee,con,ind,999,5090,5090
+SM3DATA,MATESKOUER,087,N,4,0,Skouerhoogte (mm),Skou,hoog,(mm),Actual height,,Actual,height,9999,5095,5095
+SM3DATA,MATELENGTE,088,N,4,0,Liggaamslengte (mm),Ligg,leng,(mm),Actual length,,Actual,length,9999,5100,5100
+SM3DATA,MASSKV,089,N,3,1,Massa/skouer verh.,Mas,sko,ver,Mass/shoulder ratio,Mas,sho,rat,9.9,0,0
+SM3DATA,MASLLV,090,N,3,1,Massa/Lengte verh.,Mas,Len,ver,Mass/Length ratio,Mas,Len,rat,9.9,0,0
+SM3DATA,VELDIKTE,091,N,4,1,Veldikte (mm),Vel,dikt,mm,Actual skin thick,Actual,skin,thick,99.9,5110,5110
+SM3DATA,MATESKROT,092,N,3,0,Skrotum omvang (mm),Skr,omv,(mm),Actual scrotum,Actual,scrotum,circumference,999,5115,5115
+SM3DATA,NIEREG,093,C,1,0,Nie vir Registrasie,n,v,r,Not for Registration,n,f,r,!,2030,2030
+SM3DATA,IDENT,094,C,4,0,Identifikasie metode,,Iden,met,Identification methd,,Iden,meth,@!,2035,2035
+SM3DATA,SUBAFD,095,C,2,0,Subafd. v Kuddeboek,Af,v,KB,Subdiv. of Herd Book,Su,Div,HB,!!,2040,2040
+SM3DATA,TIPIES,096,C,2,0,Kleur of tipies,,Kl,ti,Colour or typical,,Co,ty,@!,2045,2045
+SM3DATA,PYPB,097,N,4,1,Pypbeenlengte,Pyp,been,leng,Cannon bone length,Cann,bone,leng,99.9,6000,6000
+SM3DATA,FRA205,098,N,4,2,205d raam,205,dae,raa,205d frame,205,day,fra,9.99,6005,6005
+SM3DATA,FRA365,099,N,4,2,365d raam,365,dae,raa,365d frame,365,day,fra,9.99,6010,6010
+SM3DATA,FRA540,100,N,4,2,540d raam,540,dae,raa,540d frame,540,day,fra,9.99,6015,6015
+SM3DATA,LEN205,101,N,3,0,205d lengte,205,dae,len,205d length,205,day,len,999,6020,6020
+SM3DATA,LEN365,102,N,3,0,365d lengte,365,dae,len,365d length,365,day,len,999,6025,6025
+SM3DATA,LEN540,103,N,3,0,540d lengte,540,dae,len,540d length,540,day,len,999,6030,6030
+SM3DATA,SKR365,104,N,3,0,365d skrotum,365,dae,skr,365d scrotum,365,day,scr,999,6035,6035
+SM3DATA,SKR540,105,N,3,0,540d skrotum,540,dae,skr,540d scrotum,540,day,scr,999,6040,6040
+SM3DATA,LKALFN,106,C,12,0,Laaste kalf,,Laaste,kalf,Last calf,,Last,calf,@!,3005,3005
+SM3DATA,GEM100,107,N,3,0,Gem. 100d indeks,Gem,100,ind,Average 100d index,Ave,100,ind,999,3050,3050
+SM3DATA,GEM365,108,N,3,0,Gem. 365d indeks,Gem,365,ind,Ave. 365d index,Avg,365,ind,999,3055,3055
+SM3DATA,GEM540,109,N,3,0,Gem. 540d indeks,Gem,540,ind,Ave. 540d index,Avg,540,ind,999,3060,3060
+SM3DATA,SPEPER,110,N,3,0,Speen %,,Spe, %,Wean %,,Wea, %,999,3065,3065
+SM3DATA,GEGDTI,111,N,3,0,Gem. gdt indeks,Gem,gdt,ind,Average adg index,Ave,adg,ind,999,3070,3070
+SM3DATA,DEKDAT,112,D,8,0,Dekdatum,,Dek,datum,Mating date,,Mating,date,99/99/99,3075,3075
+SM3DATA,TIPEDE,113,C,1,0,Manier gedek,D,e,k,Service code,S,e,r,!,3080,3080
+SM3DATA,DRAGDA,114,D,8,0,Dragtigheid datum,Datum,dragtig,ondersoe,Pregnancy date,Date,pregnant,diagnose,99/99/99,3085,3085
+SM3DATA,DRAGTI,115,C,1,0,Dragtigheidstatus,D,s,t,Pregnancy status,P,s,t,!,3090,3090
+SM3DATA,RETENS,116,N,3,0,Vroulik retensie %,Re,te,%,Female retention %,Re,te,%,999,3067,3067
+SM3DATA,DATAAN,117,D,8,0,Datum op rekenaar,Datum,op,rekenaar,Date on computer,Date,on,computer,99/99/99,1085,1085
+SM3DATA,TEELGROEP,118,C,6,0,Kalfseisoen,Kalf,sei-,soen,Calving season,Calf,sea-,son,@!,3082,3082
+SM3DATA,BULID,119,C,12,0,Gedek deur bul id,Gedek,deur,bul,Served by bull,Served,by,bull,@!,3081,3081
+SM3DATA,SKENKER,120,C,12,0,Skenker id nommer,,Skenker,id nommer,Donor id number,,Donor,id number,@!,0,0
+SM3DATA,DRAER,121,C,12,0,Draer id nommer,,Draer,id nommer,Recipient id number,,Recipient,id number,@!,0,0
+SM3DATA,EMBRKALF,122,N,3,0,Aant embrio kalwers,Aan,emb,kal,Number embryo calves,No.,emb,cal,999,3012,3012
+SM3DATA,SIMDEKS,123,N,3,0,Simdex,,Sim,dex,Simdex,,Sim,dex,999,3033,3033
+SM3DATA,GEMGEBMAS,124,N,2,0,Gem. geboortemassa,Ge,ge,ma,Average birth mass,Av,bi,ma,99,3044,3044
+SM3DATA,KALWINGS,125,N,2,0,Aantal kalwings,Aa,ka,wi,Number of calvings,No,of,ca,99,3013,3013
+SM3DATA,AANDAT,126,D,8,0,Aanpas begindatum,Aanpas,begin,datum,Adapt starting date,Adapt,starting,date,99/99/99,5010,5010
+SM3DATA,AANMAS,127,N,3,0,Aanpas beginmassa,Aan,beg,mas,Adapt starting mass,Ada,sta,mas,999,5015,5015
+SM3DATA,EINDAT,128,D,8,0,Toetseinde datum,Toets,einde,datum,Test final date,Test,final,date,99/99/99,5030,5030
+SM3DATA,EINMAS,129,N,3,0,Toetseinde massa,Toets,einde,massa,Test final mass,Test,final,mass,999,5035,5035
+SM3DATA,DAEINT,130,N,3,0,Dae in toets,Dae,in,toe,Days in test,Day,in,tes,999,5050,5050
+SM3DATA,TYDGEN,131,N,3,0,Toets tydgenote,Toe,tyd,gen,Test contemporaries,Tes,con,tem,999,5055,5055
+SM3DATA,RANGOR,132,N,3,0,Toets rangorde,Toe,ran,ord,Test order,,Tes,ord,999,5060,5060
+SM3DATA,GDTGDT,133,N,4,0,Gdt (Gram/dag),Gram,/dag,GDT,Adg (Gram/day),Gram,/day,ADG,9999,5065,5065
+SM3DATA,GDTIND,134,N,3,0,Gdt indeks,,GDT,ind,Adg index,,ADG,ind,999,5070,5070
+SM3DATA,GDOGDO,135,N,4,0,Gdo (Gram/dagoud),,,GDO,Ada (Gram/day old),,,ADA,9999,5075,5075
+SM3DATA,GDOIND,136,N,3,0,Gdo indeks,,GDO,ind,Ada index,,ADA,ind,999,5080,5080
+SM3DATA,HOOLEN,137,N,4,2,Hoogte : Lengte,Hoog,Leng,verh,Height : Length,Heig,Leng,rati,9.99,5105,5105
+SM3DATA,REDEUI,138,C,14,0,Afkeurredes,Af,ke,re,Rejection reasons,Re,je,re,!!-!!-!!-!!-!!,1061,1061
+SM3DATA,GEKSKR,139,N,3,0,Gek.SkrotumOmv. (mm),Gek,skr,omv,Corrected scrotum,Corrected,scrotum,circumference,999,5116,5116
+SM3DATA,GEKHOO,140,N,4,0,Gek hoogte (mm),Gek,hoog,(mm),Corrected height,,Corrected,height,9999,5096,5096
+SM3DATA,GEKLEN,141,N,4,0,Gek lengte (mm),Gek,leng,(mm),Corrected length,,Corrected,length,9999,5101,5101
+SM3DATA,GEKVEL,142,N,5,1,Gek veldikte (mm),Gek,vel,dikt,Corrected skin thick,Corrected,skin,thicness,999.9,5111,5111
+SM3DATA,DRAGWE,143,N,4,1,Weke dragtig,,Weke,drag,Weeks pregnant,,Week,preg,99.9,3091,3091
+SM3DATA,OUDLKALF,144,N,3,0,Oud laaste kalf,Oud,laaste,kalf,Age last calf,Age,last,calf,999,3001,3001
+SM3DATA,GEMSMV,145,N,4,1,Gem speenmassa verh.,Gem,speen,verhouding,Ave wean mass ratio,Ave,wean,ratio,99.9,3042,3042
+SM3DATA,GEGDOI,146,N,3,0,Gem. gdo indeks,Gem,gdo,indeks,Average ada index,Ave,ada,index,999,3069,3069
+SM3DATA,OOGPIG,147,N,3,0,Oogpigmentasie,,Oog,pig,Eye pigmentation,,Eye,pig,999,6045,6045
+SM3DATA,DIVERS,148,C,20,0,Eie gebruik #1,Eie,gebruik,#1,Own use #1,Own,use,#1,@S10,6050,6050
+SM3DATA,KUDDEK,149,C,4,0,Kuddekenmerk,Kud,ken,merk,Herd design. mark,Herd,desi,mark,@!,1009,1009
+SM3DATA,JAARLE,150,C,2,0,Jaarsyfer,,Jr,sy,Year figure,,Yr,fi,!9,1010,1010
+SM3DATA,VOLGNO,151,C,4,0,Volgnommer,,Volg,nomm,Sequence number,,Seq,numb,9999,1011,1011
+SM3DATA,KEURDA,152,D,8,0,Keuringsdatum,,Keur,datum,Inspection date,,Inspect,date,99/99/99,1062,1062
+SM3DATA,KLEIBER,153,N,8,3,Kleiberverhouding,,Kleiber,verhouding,Kleiber ratio,,Kleiber,ratio,9999.999,5092,5092
+SM3DATA,KLEIBERI,154,N,3,0,Kleiber indeks,,Kleiber,indeks,Kleiber index,,Kleiber,index,999,5093,5093
+SM3DATA,SKAALID,155,C,6,0,Skaalnommer,,Skaal,nommer,Scale number,,Scale,number,@!,1012,1012
+SM3DATA,DAELAA,156,N,4,0,Dae laas gekalf,Dae,laas,kalf,Days since last calf,Days,last,calf,9999,3002,3002
+SM3DATA,SEMENC,157,C,12,0,Semenkode,,,Semenkode,Semen code,,,Semen code,@!,1015,1015
+SM3DATA,SEMENS,158,N,6,1,Semenvoorraad,,Semen,voorrd,Semen stock,,Semen,stock,9999.9,0,0
+SM3DATA,BIRDIR,159,N,8,2,GebMassa btw,Geb,mas,btw,BirMass ebv,Bir,mas,ebv,99999.99,8001,8001
+SM3DATA,BIRMAT,160,N,8,2,GebMassa mat btw,Geb,mat,btw,BirMass mat ebv,Bir,mat,ebv,99999.99,8003,8003
+SM3DATA,BIRACC,161,N,3,0,GebMassa akk,Geb,mas,akk,BirMass acc,Bir,mas,acc,999,8002,8002
+SM3DATA,WEADIR,162,N,8,2,205dag btw,205,dag,btw,205day ebv,205,day,ebv,99999.99,8005,8005
+SM3DATA,WEAMAT,163,N,8,2,205dag mat btw,205,mat,btw,205day mat ebv,205,mat,ebv,99999.99,8007,8007
+SM3DATA,WEACOM,164,N,8,2,205dag komb btw,205,kom,btw,205day comb ebv,205,com,ebv,99999.99,8009,8009
+SM3DATA,WEAACC,165,N,3,0,205dag akk,205,dag,akk,205day acc,205,day,acc,999,8006,8006
+SM3DATA,YEADIR,166,N,8,2,365dag btw,365,dag,btw,365day ebv,365,day,ebv,99999.99,8011,8011
+SM3DATA,YEAACC,167,N,3,0,365dag akk,365,dag,akk,365day acc,365,day,acc,999,8012,8012
+SM3DATA,M18DIR,168,N,8,2,540dag btw,540,dag,btw,540day ebv,540,day,ebv,99999.99,8013,8013
+SM3DATA,M18ACC,169,N,3,0,540dag akk,540,dag,akk,540day acc,540,day,acc,999,8014,8014
+SM3DATA,ADGDIR,170,N,8,2,Gdt btw,,Gdt,btw,Adg ebv,,Adg,ebv,99999.99,8022,8022
+SM3DATA,ADGACC,171,N,3,0,Gdt akk,,Gdt,akk,Adg acc,,Adg,acc,999,8023,8023
+SM3DATA,KLEDIR,172,N,8,2,Kleiber btw,Kle,ber,btw,Kleiber ebv,Kle,ber,ebv,99999.99,8020,8020
+SM3DATA,KLEACC,173,N,3,0,Kleiber akk,Kle,ber,akk,Kleiber acc,Kle,ber,akk,999,8021,8021
+SM3DATA,SCRDIR,174,N,8,2,Skrotum btw,Skr,tum,btw,Scrotum ebv,Scr,tum,ebv,99999.99,8034,8034
+SM3DATA,SCRACC,175,N,3,0,Skrotum akk,Skr,tum,akk,Scrotum acc,Scr,tum,acc,999,8035,8035
+SM3DATA,COMPOS,176,N,3,0,Rassamestelling,,Ras,sam,Breed composition,,Brd,com,999,2061,2061
+SM3DATA,IBCOEF,177,N,6,2,Inteel persentasie,,%,Inteel,Inbreed percentage,,%,Inbreed,@K 999.99,2065,2065
+SM3DATA,MICHIP,178,C,12,0,Mikroskyfie nommer,Mikro,skyfie,nommer,Microchip number,Micro,chip,number,@K!,2070,2070
+SM3DATA,SPNSPNIND,179,N,4,0,Speen-speen indeks,Spn,Spn,Ind,Wean-wean index,Wea,Wea,Ind,@K 9999,2075,2075
+SM3DATA,KLFSPNIND,180,N,4,0,Kalf-speen indeks,Klf,Spn,Ind,Calf-wean index,Clf,Wea,Ind,@K 9999,2080,2080
+SM3DATA,SPNMASVHD,181,N,4,1,Speenmassaverhouding,Spn,Mass,Verh,Wean Mass Ratio,Wean,Mass,Rat.,@K 99.9,3041,3041
+SM3DATA,GESTATION,182,N,3,0,Dragtigheidsperiode,,Drg,Per,Gestation period,,Ges,Per,@K 999,3093,3093
+SM3DATA,AVGGESTAT,183,N,3,0,Gem. dragtigheidsper,Gem,Drg,Per,Avg. gestation perio,Avg,Ges,Per,@K 999,3095,3095
+SM3DATA,ANALDATE,184,D,8,0,Analisedatum,Blup,analise,datum,Analysis date,Blup,analysis,date,99/99/99,8000,8000
+SM3DATA,KALFNO,185,N,2,0,Hoeveelste kalf,,Ho,ka,Umpteenth calf,,Um,ca,99,2095,2095
+SM3DATA,MOEROU,186,N,3,0,Kalf moerouderdom,Kal,moe,oud,Calf dam age,Cal,dam,age,999,2057,2057
+SM3DATA,NAGEBO,187,C,3,0,Na geboorte opmerk,Opm,na,geb,After birth remark,Rem,aft,bir,@!,2026,2026
+SM3DATA,TYPE,188,C,2,0,Horing / Poenskop,H,o,r,Horn / Poll,H,o,r,!!,2047,2047
+SM3DATA,HGTDIR,189,N,8,2,Skouerhoogte btw,Skr,hoo,btw,Shoulder height ebv,Shr,hgt,ebv,99999.99,8030,8030
+SM3DATA,HGTACC,190,N,3,0,Skouerhoogte akk,Skr,hoo,akk,Shoulder height acc,Shr,hgt,acc,999,8031,8031
+SM3DATA,LGTDIR,191,N,8,2,Lengte btw,Lig,len,btw,Length ebv,Bod,len,ebv,99999.99,8032,8032
+SM3DATA,LGTACC,192,N,3,0,Lengte akk,Lig,len,akk,Length akk,Bod,len,acc,999,8033,8033
+SM3DATA,OEKDIR,193,N,8,2,Oud 1e kalf btw,Oud,1ek,btw,Age 1st calf ebv,Age,1st,ebv,99999.99,8040,8066
+SM3DATA,OEKACC,194,N,3,0,Oud 1e kalf akk,Oud,1ek,akk,Age 1st calf acc,Age,1st,acc,999,8041,8067
+SM3DATA,TKPDIR,195,N,8,2,Tkp btw,,Tkp,btw,Icp ebv,,Icp,ebv,99999.99,8042,8042
+SM3DATA,TKPACC,196,N,3,0,Tkp akk,,Tkp,akk,Icp acc,,Icp,acc,999,8043,8043
+SM3DATA,PHDDAT,197,D,8,0,Blup D datum,Blup,D,datum,Blup D date,Blup,D,date,99/99/99,0,0
+SM3DATA,GEMKTS,198,N,4,0,Gem. kalf-speen ind,Gem,kalf,speen,Ave calf-wean ind,Ave,calf,wean,9999,3036,3036
+SM3DATA,GEMSTS,199,N,4,0,Gem speen-speen ind,Gem,Spn,Spn,Ave wean-wean index,Ave,wean,wean,9999,3037,3037
+SM3DATA,GEMVOV,200,N,3,0,Gem. vov indeks,Gem,vov,ind,Ave. fcr index,Ave,fcr,ind,999,3072,3072
+SM3DATA,INVLOE,201,N,7,3,Dierinvloed %,Dier,invloed,persentasi,Animal influence %,Animal,influence,percentage,999.999,2096,2096
+SM3DATA,DIVERT,202,C,20,0,Eie gebruik #2,Eie,gebruik,#2,Own use #2,Own,use,#2,@S10,6051,6051
+SM3DATA,BIRMAC,203,N,3,0,GebMassa mat akk,Geb,mat,akk,BirMass mat acc,Bir,mat,acc,999,8004,8004
+SM3DATA,EOCDIR,204,N,8,2,Kalftempo btw,Kal,tem,btw,Calf rate ebv,Cal,rat,ebv,99999.99,8044,8044
+SM3DATA,EOCACC,205,N,3,0,Kalftempo akk,Kal,tem,akk,Calf rate acc,Cal,rat,acc,999,8045,8045
+SM3DATA,WEAMAC,206,N,3,0,205dag mat akk,205,mat,akk,205day mat acc,205,mat,acc,999,8008,8008
+SM3DATA,FINDIR,207,N,8,2,Voerwinsindeks btw,Voe,wins,btw,Feed profit index eb,Fee,pro,ebv,99999.99,8028,8028
+SM3DATA,FINACC,208,N,3,0,Voerwinsindeks akk,Voe,wins,akk,Feed profit index ac,Fee,pro,acc,999,8029,8029
+SM3DATA,PCFCRD,209,N,8,2,Voeromset btw,,Vov,btw,Feed conv ebv,,Fcr,ebv,99999.99,8026,8026
+SM3DATA,PCFCRA,210,N,3,0,Voeromset akk,,Vov,akk,Feed conv acc,,Fcr,acc,999,8027,8027
+SM3DATA,MCWDIR,211,N,8,2,Volwasse massa btw,Vol,mas,btw,Mature weight ebv,Mat,wei,ebv,99999.99,8017,8017
+SM3DATA,MCWACC,212,N,3,0,Volwasse massa akk,Vol,mas,akk,Mature weight acc,Mat,wei,acc,999,8018,8018
+SM3DATA,CARDIR,213,N,8,2,Uitslag % btw,Uit,%,btw,Slaughter % ebv,Sla,%,ebv,99999.99,8066,8066
+SM3DATA,CARACC,214,N,3,0,Uitslag % akk,Uit,%,akk,Slaughter % acc,Sla,%,ac,999,8067,8067
+SM3DATA,RIBDIR,215,N,8,2,Marmering btw,Mar,mer,btw,Rib fat ebv,Rib,fat,ebv,99999.99,8068,8068
+SM3DATA,RIBACC,216,N,3,0,Marmering akk,Mar,mer,akk,Rib fat acc,Rib,fat,acc,999,8069,8069
+SM3DATA,WEACAC,217,N,3,0,205dag komb akk,205,kom,akk,205day comb acc,205,com,acc,999,8010,8010
+SM3DATA,REPIND,218,N,4,0,Reproduksie-indeks,,Repr,ind,Reproduction index,,Repr,ind,9999,2059,2059
+SM3DATA,EOCMAT,219,N,8,2,Kalfgemak btw,Kal,gem,btw,Calving ease ebv,Eas,cal,ebv,99999.99,8046,8046
+SM3DATA,EOCMAC,220,N,3,0,Kalfgemak akk,Kal,gem,akk,Calving ease acc,Eas,cal,acc,999,8047,8047
+SM3DATA,REMARK,221,C,30,0,Opmerking spesiaal,,Spesiale,opmerking,Remark special,,Special,remark,@s30,1018,1018
+SM3DATA,IDSOC,222,C,12,0,Genootskap Id,,Genootskap,Id,Society Id,,Society,Id,@!,1012,1012
+SM3DATA,EYEPIG,223,C,2,0,Oogpigmentasie,,Oo,pi,Eye pigmentation,,Ey,pi,!!,2048,2048
+SM3DATA,UNR100,224,C,3,0,100d onbetroubaar,100,Onb,kod,100d unreliable,100,Unr,cod,!!!,4047,4047
+SM3DATA,UNR205,225,C,3,0,205d onbetroubaar,205,dae,onb,205d unreliable,205,day,unr,!!!,4092,4092
+SM3DATA,UNR365,226,C,3,0,365d onbetroubaar,365,dae,onb,365d unreliable,365,day,unr,!!!,4147,4147
+SM3DATA,UNR540,227,C,3,0,540d onbetroubaar,540,dae,onb,540d unreliable,540,day,unr,!!!,4182,4182
+SM3DATA,REARST,228,C,1,0,Grootmaakstatus,G,m,s,Rearing status,R,e,s,!,2006,2006
+SM3DATA,COWDIR,229,N,8,2,Koeiwins btw,Koe,win,btw,Cow profit ebv,Cow,pro,ebv,99999.99,8088,8088
+SM3DATA,COWACC,230,N,3,0,Koeiwins akk,Koe,win,akk,Cow profit acc,Cow,pro,acc,999,8089,8089
+SM3DATA,COEDIR,231,N,8,2,Koeidoeltref btw,Koe,doe,btw,Cow eff ebv,Cow,eff,ebv,99999.99,8082,8082
+SM3DATA,COEACC,232,N,3,0,Koei doelt akk,Koe,doe,akk,Cow eff acc,Cow,eff,acc,999,8083,8083
+SM3DATA,KMEDIR,233,N,8,2,Vleisopbrengs btw,Vle,opbrengs,btw,Meat prod ebv,Mea,pro,ebv,99999.99,8064,8064
+SM3DATA,KMEACC,234,N,3,0,Vleisopbrengs akk,Vle,opbrengs,akk,Meat prod acc,Mea,pro,acc,999,8065,8065
+SM3DATA,FEIDIR,235,N,8,2,Voerinname btw,Voe,inname,btw,Feed intake ebv,Fee,int,ebv,99999.99,8024,8024
+SM3DATA,FEIACC,236,N,3,0,Voerinname akk,Voe,inn,akk,Feed intake acc,Fee,int,acc,999,8025,8025
+SM3DATA,FATDIR,237,N,8,2,Vetdikte btw,Vet,dik,btw,Fat thickness ebv,Fat,thi,ebv,99999.99,8062,8062
+SM3DATA,EYEDIR,238,N,8,2,Oogspieroppervlak btw,Oog,spi,btw,Eye muscle area ebv,Eye,mus,ebv,99999.99,8060,8060
+SM3DATA,FATACC,238,N,3,0,Vetdikte akk,Vet,dik,akk,Fat thickness acc,Fat,thi,acc,999,8063,8063
+SM3DATA,EYEACC,240,N,3,0,Oogspieroppervlak ak,Oog,spi,akk,Eye muscle area acc,Eye,mus,acc,999,8061,8061
+SM3DATA,POWDIR,241,N,8,2,Naspeen btw,Na,spn,btw,Post wean ebv,Pos,wea,ebv,99999.99,8015,8015
+SM3DATA,POWACC,242,N,3,0,Naspeen akk,Na,spn,akk,Post wean acc,Pos,wea,acc,999,8016,8016
+SM3DATA,PRODIR,243,N,8,2,Produksie indeks btw,Pro,ind,btw,Production index ebv,Pro,ind,ebv,99999.99,8048,8068
+SM3DATA,PROACC,244,N,3,0,Produksie indeks akk,Pro,ind,akk,Production index acc,Pro,ind,acc,999,8049,8069
+SM3DATA,COMDIR,245,N,8,2,Koei melk btw,Koe,mel,btw,Cow milk ebv,Cow,mil,ebv,99999.99,8080,8080
+SM3DATA,COMACC,246,N,3,0,Koei melk akk,Koe,mel,akk,Cow milk acc,Cow,mil,acc,999,8081,8081
+SM3DATA,COGDIR,247,N,8,2,Koei groei btw,Koe,gro,btw,Cow growth ebv,Cow,gro,ebv,99999.99,8084,8084
+SM3DATA,COGACC,248,N,3,0,Koei groei akk,Koe,gro,akk,Cow growth acc,Cow,gro,acc,999,8085,8085
+SM3DATA,COHDIR,249,N,8,2,Koei hoogte btw,Koe,hoo,btw,Cow height ebv,Cow,hei,ebv,99999.99,8090,8090
+SM3DATA,COHACC,250,N,3,0,Koei hoogte akk,Koe,hoo,akk,Cow height acc,Cow,hei,acc,999,8091,8091
+SM3DATA,CORDIR,251,N,8,2,Koei reproduksie btw,Koe,rep,btw,Cow reproduction ebv,Cow,rep,ebv,99999.99,8086,8086
+SM3DATA,CORACC,252,N,3,0,koei reproduksie akk,Koe,rep,akk,Cow reproduction acc,Cow,rep,acc,999,8087,8087
+SM3DATA,STADIR,253,N,8,2,Stayability btw,Sta,abi,btw,Stayability ebv,Sta,abi,ebv,99999.99,8050,8050
+SM3DATA,STAACC,254,N,3,0,Stayability akk,Sta,abi,akk,Stayability acc,Sta,abi,acc,999,8051,8051

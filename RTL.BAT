@@ -1,0 +1,2 @@
+rmake RTL
+pause
