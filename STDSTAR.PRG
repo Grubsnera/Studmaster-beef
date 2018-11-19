@@ -31,9 +31,9 @@ FUNCTION stdstar
       // Language
       cLanType(STDWAAR->lantyp)
       if cLanType() == "A"
-         cAppName("StoetMeester V4.4b(25)")
+         cAppName("StoetMeester V4.4b(26)")
       else
-         cAppName("StudMaster V4.4b(25)")
+         cAppName("StudMaster V4.4b(26)")
       endif
 
       // Versions
@@ -63,6 +63,8 @@ FUNCTION stdstar
       // 4.4b(24) 18-01-23 15:04 Electronic matings to studbook. One character too many in case of msire fathers
       //                         15 spaces reduced to 14 characters
       // 4.4b(25) 18-08-02 05:43 Include indekskode in IRIS electronic birth notification
+      // 4.4b(26) 19/11/18 13:09 Correct import registration numbers for format
+      //                         HHYY/SSSS
 
       // Colors
       if iscolor()

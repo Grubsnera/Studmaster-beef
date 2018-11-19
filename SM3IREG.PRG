@@ -180,54 +180,72 @@ FUNCTION sm3ireg()
 
          else
 
-            altd()
-
             // Id number in free flow format
 
             cData := alltrim(cIdMask())
 
-            // Year
-            if at("Y",cData) > 0
-               cData := strtran(cData,"Y","",2)
-               cData := strtran(cData,"Y",substr(SM3IREG->idn,9,2))
-            else
-               if at("J",cData) > 0
-                  cData := strtran(cData,"J","",2)
-                  cData := strtran(cData,"J",substr(SM3IREG->idn,9,2))
-               endif
-            endif
+            if cData == "HHYY/SSSS"
 
-            // Sequence number
-            cMask := ""
-            nZero := 0
-            if val(substr(SM3IREG->idn,11,4)) < 10
-               cMask := "000" + alltrim(str(val(substr(SM3IREG->idn,11,4))))
-            elseif val(substr(SM3IREG->idn,11,4)) < 100
-               cMask := "00" + alltrim(str(val(substr(SM3IREG->idn,11,4))))
-            elseif val(substr(SM3IREG->idn,11,4)) < 1000
-               cMask := "0" + alltrim(str(val(substr(SM3IREG->idn,11,4))))
-            else
-               cMask := alltrim(str(val(substr(SM3IREG->idn,11,4))))
-            endif
-            if at("S",cData) > 0
-               cData := strtran(cData,"S","",2)
-               cData := strtran(cData,"S",cMask)
-            else
-               if at("V",cData) > 0
-                  cData := strtran(cData,"V","",2)
-                  cData := strtran(cData,"V",cMask)
-               endif
-            endif
+               // Id number in HHYY/SSSS format
 
-            // Herd designation
-            if at("H",cData) > 0
-               cData := strtran(cData,"H","",2)
-               cData := strtran(cData,"H",alltrim(substr(SM3IREG->idn,5,4)))
-            else
-               if at("K",cData) > 0
-                  cData := strtran(cData,"K","",2)
-                  cData := strtran(cData,"K",alltrim(substr(SM3IREG->idn,5,4)))
+               cData := alltrim(substr(SM3IREG->idn,5,2)) // Hdm
+               cData += substr(SM3IREG->idn,9,2) + "/" // Year
+               if val(substr(SM3IREG->idn,11,4)) < 10
+                  cData += "00" + alltrim(str(val(substr(SM3IREG->idn,11,4))))
+               elseif val(substr(SM3IREG->idn,11,4)) < 100
+                  cData += "0" + alltrim(str(val(substr(SM3IREG->idn,11,4))))
+               else
+                  cData += alltrim(str(val(substr(SM3IREG->idn,11,4))))
                endif
+
+
+            else
+
+               // Year
+               if at("Y",cData) > 0
+                  cData := strtran(cData,"Y","",2)
+                  cData := strtran(cData,"Y",substr(SM3IREG->idn,9,2))
+               else
+                  if at("J",cData) > 0
+                     cData := strtran(cData,"J","",2)
+                     cData := strtran(cData,"J",substr(SM3IREG->idn,9,2))
+                  endif
+               endif
+
+               // Sequence number
+               cMask := ""
+               nZero := 0
+               if val(substr(SM3IREG->idn,11,4)) < 10
+                  cMask := "000" + alltrim(str(val(substr(SM3IREG->idn,11,4))))
+               elseif val(substr(SM3IREG->idn,11,4)) < 100
+                  cMask := "00" + alltrim(str(val(substr(SM3IREG->idn,11,4))))
+               elseif val(substr(SM3IREG->idn,11,4)) < 1000
+                  cMask := "0" + alltrim(str(val(substr(SM3IREG->idn,11,4))))
+               else
+                  cMask := alltrim(str(val(substr(SM3IREG->idn,11,4))))
+               endif
+               if at("S",cData) > 0
+                  cData := strtran(cData,"S","",2)
+                  cData := strtran(cData,"S",cMask)
+               else
+                  if at("V",cData) > 0
+                     cData := strtran(cData,"V","",2)
+                     cData := strtran(cData,"V",cMask)
+                  endif
+               endif
+
+               // Herd designation
+               if at("H",cData) > 0
+                  cData := strtran(cData,"H","",2)
+                  cData := strtran(cData,"H",alltrim(substr(SM3IREG->idn,5,4)))
+               else
+                  if at("K",cData) > 0
+                     cData := strtran(cData,"K","",2)
+                     cData := strtran(cData,"K",alltrim(substr(SM3IREG->idn,5,4)))
+                  endif
+               endif
+
+
             endif
 
          endif
