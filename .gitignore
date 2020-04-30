@@ -1,5 +1,9 @@
 # Albert
+/*.cdx
+/*.dll
 /*.exe
+/*.ntx
 /*.obj
+/*.ocx
 /*.tmp
 /*.zip
