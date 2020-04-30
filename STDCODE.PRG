@@ -278,7 +278,7 @@ FUNCTION stdcode
 
                   cStr := "StoetMeester Gebruikerskode" + chr(13) + chr(10) // Window frame name
                   fwrite(nMfil,cStr)
-                  cStr := "help@studmaster.com" + chr(13) + chr(10) // To
+                  cStr := "home@studmaster.com" + chr(13) + chr(10) // To
                   fwrite(nMfil,cStr)
                   cStr := "StoetMeester Bees Gebruikerskode" + chr(13) + chr(10) // Subject
                   fwrite(nMfil,cStr)
@@ -315,7 +315,7 @@ FUNCTION stdcode
 
                   cStr := "StudMaster User Code" + chr(13) + chr(10)
                   fwrite(nMfil,cStr)
-                  cStr := "help@studmaster.com" + chr(13) + chr(10)
+                  cStr := "home@studmaster.com" + chr(13) + chr(10)
                   fwrite(nMfil,cStr)
                   cStr := "StudMaster Beef User Code" + chr(13) + chr(10)
                   fwrite(nMfil,cStr)

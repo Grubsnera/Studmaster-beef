@@ -284,7 +284,7 @@ FUNCTION stdbace
 
          cStr := "StoetMeester Rugsteun" + chr(13) + chr(10) // Window frame name
          fwrite(nMfil,cStr)
-         cStr := "help@studmaster.com" + chr(13) + chr(10) // To
+         cStr := "home@studmaster.com" + chr(13) + chr(10) // To
          fwrite(nMfil,cStr)
          cStr := "StoetMeester Rugsteun" + chr(13) + chr(10) // Subject
          fwrite(nMfil,cStr)
@@ -315,7 +315,7 @@ FUNCTION stdbace
 
          cStr := "StudMaster Backup" + chr(13) + chr(10)
          fwrite(nMfil,cStr)
-         cStr := "help@studmaster.com" + chr(13) + chr(10)
+         cStr := "home@studmaster.com" + chr(13) + chr(10)
          fwrite(nMfil,cStr)
          cStr := "StudMaster Backup" + chr(13) + chr(10)
          fwrite(nMfil,cStr)

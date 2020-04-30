@@ -33,7 +33,7 @@ PROCEDURE stdabou(cBood)
       @13,nBoxc say "Kontakadres....... Posbus 11094, Riverwalk, 2538."
       @14,nBoxc say "Telefoonnommer.... "+cOwnFone()
       @15,nBoxc say "Faksnommer........ "+cOwnFax()
-      @16,nBoxc say "Epos.............. help@studmaster.com"
+      @16,nBoxc say "Epos.............. home@studmaster.com"
       @17,nBoxc say "Webtuiste......... http://www.stoetmeester.co.za"
    else
       nBoxc := fBoxCent(7,space(60),12,"About "+cBood)
@@ -45,7 +45,7 @@ PROCEDURE stdabou(cBood)
       @13,nBoxc say "Address............... P.O. Box 11094, Riverwalk, 2538."
       @14,nBoxc say "Telephone number...... "+cOwnFone()
       @15,nBoxc say "Fax number............ "+cOwnFax()
-      @16,nBoxc say "Email................. help@studmaster.com"
+      @16,nBoxc say "Email................. home@studmaster.com"
       @17,nBoxc say "Web................... http://www.studmaster.co.za"
    endif
    fScrWait(24)
