@@ -1,13 +1,17 @@
-StoetMeester Elektroniese Dekkings Kennisgewing
-edata@studbook.co.za
-Elektroniese Dekkings Kennisgewing
-X:\DATA\EPOS\MBONPER.DAT
-Elektroniese aantekening van dekkings vir:
+StudMaster User Code
+home@studmaster.com
+StudMaster Beef User Code
 
-Ras: Bonsmara
-Naam: P.E. Roux (PER02)
-Lidnommer: 653995
-Kuddekenmerk: PER
-Voorvoegsel: PIETLERIA
-
-Voorberei deur StoetMeester V4.4b(21)
+Please sypply user code for:
+SMA0002   
+4.4b
+AvR                                     
+1788783   
+17/05/20
+Bonsmara
+StudMaster
+P.O. Box 19457
+Noordbrug
+Tel: (082) 8812310
+2522
+StudMaster V4.4b(27)
