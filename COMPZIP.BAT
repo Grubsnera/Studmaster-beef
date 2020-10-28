@@ -15,16 +15,16 @@ if %1t==et goto english
   copy newdryf.bat newdryf.tdb
   del stdreek.tdb
   del sm3seri.tdb
-  fd *.bat /d /t04:42:28
-  fd *.dbv /d /t04:42:28
-  fd *.exe /d /t04:42:28
-  fd *.ovl /d /t04:42:28
-  fd *.tdb /d /t04:42:28
+  fd *.bat /d /t04:42:29
+  fd *.dbv /d /t04:42:29
+  fd *.exe /d /t04:42:29
+  fd *.ovl /d /t04:42:29
+  fd *.tdb /d /t04:42:29
 
   cls
   echo Nuwe ZIP lêers word geskep...
   pkzip -a -ex smasys @compzip.lst
-  fd smasys.zip /d /t04:42:28
+  fd smasys.zip /d /t04:42:29
   del newdryf.tdb
   xcopy smasys.zip x:\prepare\sma /v /y
   goto end
@@ -38,16 +38,16 @@ if %1t==et goto english
   copy newdryf.bat newdryf.tdb
   del stdreek.tdb
   del sm3seri.tdb
-  fd *.bat /d /t04:42:28
-  fd *.dbv /d /t04:42:28
-  fd *.exe /d /t04:42:28
-  fd *.ovl /d /t04:42:28
-  fd *.tdb /d /t04:42:28
+  fd *.bat /d /t04:42:29
+  fd *.dbv /d /t04:42:29
+  fd *.exe /d /t04:42:29
+  fd *.ovl /d /t04:42:29
+  fd *.tdb /d /t04:42:29
 
   cls
   echo New ZIP files being created...
   pkzip -a -ex smesys @compzip.lst
-  fd smesys.zip /d /t04:42:28
+  fd smesys.zip /d /t04:42:29
   del newdryf.tdb
   xcopy smesys.zip x:\prepare\sme /v /y
   goto end

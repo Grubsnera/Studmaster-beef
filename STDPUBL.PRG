@@ -16,7 +16,7 @@ FUNCTION cAppName(cData)
       cRetu := cData
    endif
    if empty(cRetu)
-      cRetu := "StoetMeester V4.4b(28)"
+      cRetu := "StoetMeester V4.4b(29)"
    endif
 return cRetu
 
@@ -27,7 +27,7 @@ FUNCTION cVersion(cData)
       cRetu := cData
    endif
    if empty(cRetu)
-      cRetu := "4.4b(28)"
+      cRetu := "4.4b(29)"
    endif
 return cRetu
 
