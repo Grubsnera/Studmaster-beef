@@ -1774,6 +1774,8 @@ FUNCTION fId(cId,lZero)
          endif
       elseif cBrec == "SASG"
          cRetu := alltrim(cKudd) + alltrim(cJaar) + padl(cVolg,4,"0")
+      elseif cBrec == "SAWY"
+         cRetu := alltrim(cKudd) + alltrim(cJaar) + padl(cVolg,4,"0")
       else
          cRetu := alltrim(cKudd) + alltrim(cJaar) + alltrim(cVolg)
       endif
