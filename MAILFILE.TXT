@@ -1,17 +1,13 @@
-StudMaster User Code
-home@studmaster.com
-StudMaster Beef User Code
+StudMaster Electronic Birth Notification
+admin@wagyu.org.za
+Electronic Birth Notification
+X:\DATA\EMAIL\B244CP.DAT
+Electronic birth notification for:
 
-Please sypply user code for:
-SMA0002   
-4.4b
-AvR                                     
-1788783   
-17/05/20
-Bonsmara
-StudMaster
-P.O. Box 19457
-Noordbrug
-Tel: (082) 8812310
-2522
-StudMaster V4.4b(27)
+Breed: Wagyu
+Name: Glenfinlas Cattle Company
+Member Number: 0315578
+Herd Designation: CP
+Prefix: GLENFINLAS
+
+Prepared by StoetMeester V4.4b(28)
