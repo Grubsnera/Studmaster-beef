@@ -31,9 +31,9 @@ FUNCTION stdstar
       // Language
       cLanType(STDWAAR->lantyp)
       if cLanType() == "A"
-         cAppName("StoetMeester V4.4b(27)")
+         cAppName("StoetMeester V4.4b(28)")
       else
-         cAppName("StudMaster V4.4b(27)")
+         cAppName("StudMaster V4.4b(28)")
       endif
 
       // Versions
@@ -66,6 +66,7 @@ FUNCTION stdstar
       // 4.4b(26) 19/11/18 13:09 Correct import registration numbers for format
       //                         HHYY/SSSS
       // 4.4b(27) 2020-04-30 Change email to home@studmaster.com
+      // 4.4b(28) 2020-10-28 Change breedplan waguy format to with zeros
 
       // Colors
       if iscolor()
