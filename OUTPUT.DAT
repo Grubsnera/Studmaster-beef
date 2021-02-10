@@ -1,88 +1,33 @@
-\f0\fs22 STUDMASTER                                                      Report: DC
- P.O. Box 19457                                                    Date: 19/10/20
- Noordbrug                                                         Page: 1
- Tel: (082) 8812310                                    Herd Designation:     
- 2522                                                            REJECTION CODES.
+\f0\fs22 AVR                                                            Verslag: DA
+ P.O. Box 19457                                                   Datum: 04/11/20
+ Noordbrug                                                       Bladsy: 1
+ Tel: (082) 8812310                                        Kuddekenmerk:     
+ 2522                                                         WAAR IS DIER KODES.
  ================================================================================
- Re                                                                              
- re                                                                              
- so Description                                                                  
- -- ------------------------------------------------------------                 
- A1 PERFORMANCE - Slaughter Clause                                               
- A2 PERFORMANCE - Minimum breed standards (index)                                
- B1 CONFORMATION - Not typical of Breed                                          
- B2 CONFORMATION - Poor muscling                                                 
- B3 CONFORMATION - Bad balance (height:length)                                   
- B4 CONFORMATION - Bad balance (front-:hindquarter)                              
- B5 CONFORMATION - Bad constitution or poorly adapted                            
- B6 CONFORMATION - Pony type                                                     
- B7 CONFORMATION - Too big - late maturing                                       
- B8 CONFORMATION - Too coarsely boned                                            
- B9 CONFORMATION - Too finely boned                                              
- C1 COLOUR - White above underline                                               
- C2 COLOUR - White above tail end                                                
- C3 COLOUR - Not typical Breed colour                                            
- D1 HAIR COAT - Long, frizzy or woolly hair coat                                 
- E1 MASCULINITY/FEMININITY - Oxy                                                 
- E2 MASCULINITY/FEMININITY - Lacks femininity (too masculine)                    
- F1 TEMPERAMENT - Wild or temperamental                                          
- G1 HEAD - Skew face or muzzle                                                   
- G2 HEAD - Jaw too light                                                         
- G3 HEAD - Undershot jaw                                                         
- G4 HEAD - Overshot jaw                                                          
- H1 FORE-QUARTER - Brisket too prominent (heifers)                               
- H2 FORE-QUARTER - Loosely attached shoulders                                    
- J1 MIDPIECE - Weak or hollow back                                               
- J2 MIDPIECE - Laterally twisted spine                                           
- J3 MIDPIECE - Hunchback                                                         
- J4 MIDPIECE - Devil's grip                                                      
- K1 HIND QUARTER - Rump too flat                                                 
- K2 HIND QUARTER - Excessively sloping rump                                      
- K3 HIND QUARTER - Rump too roofy                                                
- L1 FRONT LEGS - Too X-legged                                                    
- L2 FRONT LEGS - Pigeon-toed                                                     
- L3 FRONT LEGS - Bandy-legged                                                    
- L4 FRONT LEGS - Stag knees                                                      
- L5 FRONT LEGS - Knees bent backwards                                            
- M1 HIND LEGS - Hocks too upright                                                
- M2 HIND LEGS - Excessively sickle hocked                                        
- M3 HIND LEGS - Excessively cow hocked                                           
- M4 HIND LEGS - Bandy-legged                                                     
- N1 PASTERNS - Sagging pasterns                                                  
- N2 PASTERNS - Upright pasterns                                                  
- P1 HOOVES - Outgrowing hooves                                                   
- P2 HOOVES - Hooves curling inwardly                                             
+    Beskrywing                                                  
+ Ko van                                                         
+ de Waar is dier kode                                           
+ -- ------------------------------------------------------------
+ 02 ANIMAL DIED-CALF PROBLEMS                                   
+ 04 ANIMAL SOLD BECAUSE OF LOOKS                                
+ 05 ANIMAL SOLD BECAUSE OF AGE                                  
+ 06 ANIMAL SOLD BECAUSE OF FERTILITY                            
+ 07 ANIMAL SOLD BECAUSE OF PERFORMANCE                          
+ 08 ANIMAL SOLD BECAUSE OF DISEASE                              
+ 09 ANIMAL SOLD BECAUSE OF DRAUGHT                              
+ 10 CALF DIED-NATURAL CAUSES                                    
+ 12 CALF DIED-TICK DISEASE                                      
+ 13 CALF DIED-OTHER DISEASE                                     
+ 14 CALF DIED-UNKNOWN DISEASE                                   
+ 15 CALF SLAUGHTERED                                            
+ 16 ANIMAL DISAPPEARED                                          
+ 17 ABORTION                                                    
+ 18 CALF DIED AT BIRTH                                          
+ 19 CALF DIED AFTER 3 MONTHS                                    
+ 20 CALF DIED 7 MONTHS AFTER BIRTH                              
+ 21 CALF DIED 12 MONTHS AFTER BIRTH                             
+ 22 CALF DIED 18 MONTHS AFTER BIRTH                             
+ CH ANIMAL IN COMMERCIAL HERD                                   
+ IH ANIMAL IN HERD                                              
  ================================================================================
- StoetMeester V4.4b(27)\page
-\f0\fs22 STUDMASTER                                                      Report: DC
- P.O. Box 19457                                                    Date: 19/10/20
- Noordbrug                                                         Page: 2
- Tel: (082) 8812310                                    Herd Designation:     
- 2522                                                            REJECTION CODES.
- ================================================================================
- Re                                                                              
- re                                                                              
- so Description                                                                  
- -- ------------------------------------------------------------                 
- P3 HOOVES - Hooves too open (pole shoe)                                         
- P4 HOOVES - Lacks depth of heel                                                 
- Q1 TAIL - Wrytail - attached off centre                                         
- Q2 TAIL - Very prominent tail setting                                           
- Q3 TAIL - Congenital kink in upper third of tail                                
- R1 SCROTUM & TESTES - Scrotum extremely twisted                                 
- R2 SCROTUM & TESTES - Testes (scrotum) too small                                
- R3 SCROTUM & TESTES - Testes too big                                            
- R4 SCROTUM & TESTES - Testes malformed or twisted in scrotum                    
- R5 SCROTUM & TESTES - Hypoplasia                                                
- R6 SCROTUM & TESTES - Cryptorchidism                                            
- S1 SHEATH - Sheath too long                                                     
- S2 SHEATH - Fleshy sheath                                                       
- S3 SHEATH - Prepuial prolapse                                                   
- S4 SHEATH - Sheath opening too wide                                             
- T1 FEMALE GENITALS - Under-developed genitals                                   
- T2 FEMALE GENITALS - Genital tends to be horizontal                             
- V1 UDDER AND TEATS - Poor udder development                                     
- V2 UDDER AND TEATS - Too poor or abnormal teat development                      
- W1 OTHER - Any other negative traits not on list - specify                      
- ================================================================================
- StoetMeester V4.4b(27)\page
+ StoetMeester V4.4b(29)\page
