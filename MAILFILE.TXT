@@ -1,13 +1,13 @@
-StudMaster Electronic Birth Notification
+StudMaster Electronic Performance Data Notification
 admin@wagyu.org.za
-Electronic Birth Notification
-X:\DATA\EMAIL\B244CP.DAT
-Electronic birth notification for:
+Electronic Performance Data Notification
+X:\DATA\EMAIL\P244CP.DAT
+Electronic performance data notification for:
 
 Breed: Wagyu
 Name: Glenfinlas Cattle Company
-Member Number: 0315578
+Member Number: 315578
 Herd Designation: CP
 Prefix: GLENFINLAS
 
-Prepared by StoetMeester V4.4b(28)
+Prepared by StoetMeester V4.4b(29)
