@@ -2142,13 +2142,39 @@ STATIC FUNCTION fDiskBrep
 
       // Open the file
       if file(cFile)
-         set alternate to (cFile) additive
-         set alternate on
-         set console off
+
+         nHdel := fopen(cFile,FO_WRITE)
+
+         if nHdel < 0
+            if cLanType() == "A"
+               fScrBood(maxrow()-1)
+               fScrWBood(maxrow(),"Prestasielˆer nie geskep! Rede: "+alltrim(str(ferror(),5,0)))
+            else
+               fScrBood(maxrow()-1)
+               fScrWBood(maxrow(),"Unable to create performance file! Reason: "+alltrim(str(ferror(),5,0)))
+            endif
+            lRetu := .f.
+            break
+         endif
+
+         fseek(nHdel, 0, FS_END)                 // Position record pointer at end of file
+
       else
-         set alternate to (cFile)
-         set alternate on
-         set console off
+
+         nHdel := fcreate(cFile)
+
+         if nHdel < 0
+            if cLanType() == "A"
+               fScrBood(maxrow()-1)
+               fScrWBood(maxrow(),"Prestasielˆer nie geskep! Rede: "+alltrim(str(ferror(),5,0)))
+            else
+               fScrBood(maxrow()-1)
+               fScrWBood(maxrow(),"Unable to create performance file! Reason: "+alltrim(str(ferror(),5,0)))
+            endif
+            lRetu := .f.
+            break
+         endif
+
       endif
 
       // Write the data
@@ -2157,15 +2183,11 @@ STATIC FUNCTION fDiskBrep
       do while !eof()
 
          // Screen
-         set alternate off
-         set cons on
          if cLanType() == "A"
             fScrBood(maxrow()-1,padr(cData,12)+" "+fPercent(recno(),lastrec())+"% Voltooi"      )
          else
             fScrBood(maxrow()-1,padr(cData,12)+" "+fPercent(recno(),lastrec())+"% Completed"      )
          endif
-         set cons off
-         set alternate on
 
          // Test if there is data
          if SM3DATA->mas&cOude < 1 .or. empty(SM3DATA->dat&cOude)
@@ -2202,61 +2224,67 @@ STATIC FUNCTION fDiskBrep
 
          /*********************************************************************/
          // The actual write of the animal itself
-         ?? "K"                                  // Always K
-         ?? substr(cTotNaam(),152,7)             // Soc ident of herd
+
+         cStra := "K"                                  // Always K
+         cStra += substr(cTotNaam(),152,7)             // Soc ident of herd
 
          // Calf tattoo
-         ?? padr(fId(SM3DATA->idnr,.f.),19)      // Id number
+         cStra += padr(fId(SM3DATA->idnr,.f.),19)      // Id number
 
-         ?? "K"                                  // Kilograms
-         ?? space(1)                             // Further test
-         ?? space(1)                             // Disposal code
+         cStra += "K"                                  // Kilograms
+         cStra += space(1)                             // Further test
+         cStra += space(1)                             // Disposal code
 
          set cent on
-         ??  strtran(dtoc(SM3DATA->dat&cOude),"/","") // Weighing date
+         cStra +=  strtran(dtoc(SM3DATA->dat&cOude),"/","") // Weighing date
          set cent off
 
-         ?? padl(ltrim(str(SM3DATA->mas&cOude)),4,"0") //Mass
+         cStra += padl(ltrim(str(SM3DATA->mas&cOude)),4,"0") //Mass
 
          if val(SM3DATA->kod&cOude) > 0
-            ?? padl(SM3DATA->kod&cOude,3,"0")    // Man group
+            cStra += padl(SM3DATA->kod&cOude,3,"0")    // Man group
          else
-            ?? "SMB"
+            cStra += "SMB"
          endif
 
-         ?? space(1)                             // Desexed
-         ?? space(4)                             // Hip height
+         cStra += space(1)                             // Desexed
+         cStra += space(4)                             // Hip height
 
          // Scrotum circumference
          if cOude == "365"
             if SM3DATA->skr365 > 100 .and. SM3DATA->skr365 < 500
-               ?? padl(alltrim(str(SM3DATA->skr365)),3)
+               cStra += padl(alltrim(str(SM3DATA->skr365)),3)
             else
-               ?? space(3)                       // Scrotum circ
+               cStra += space(3)                       // Scrotum circ
             endif
          elseif cOude == "540"
             if SM3DATA->skr540 > 100 .and. SM3DATA->skr540 < 500
-               ?? padl(alltrim(str(SM3DATA->skr540)),3)
+               cStra += padl(alltrim(str(SM3DATA->skr540)),3)
             else
-               ?? space(3)                       // Scrotum circ
+               cStra += space(3)                       // Scrotum circ
             endif
          else
-            ?? space(3)                          // Scrotum circ
+            cStra += space(3)                          // Scrotum circ
          endif
 
-         ?? space(2)                             // Serving capacity
-         ?? space(2)                             // Number of serves
+         cStra += space(2)                             // Serving capacity
+         cStra += space(2)                             // Number of serves
 
          // Analysis indicator
          if val(cOude) < 300
-            ?? " "
+            cStra += " "
          endif
 
          // Fill up
-         ?? space(128)
+         cStra += space(128)
 
-         // Carriage return etc
-         ?
+         cStra += chr(13) + chr(10)
+         nLen := fwrite(nHdel,cStra)
+
+         if nLen != len(cStra)
+            fScrWBood(maxrow(),"File Write Error (Record A): "+ALLTRIM(STR(FERROR(),5,0)))
+            break
+         endif
 
          /*********************************************************************/
          // The actual write of the animals dam in case of wean
@@ -2268,36 +2296,41 @@ STATIC FUNCTION fDiskBrep
 
                // Moederouderdom by speen
 
-               ?? "K"                            // Always K
-               ?? substr(cTotNaam(),152,7)       // Soc ident of herd
+               cStrb := "K"                            // Always K
+               cStrb += substr(cTotNaam(),152,7)       // Soc ident of herd
 
                // Dam tattoo
-               ?? padr(fId(SM3DATA->idmoer,.f.),19) // Id number
+               cStra += padr(fId(SM3DATA->idmoer,.f.),19) // Id number
 
-               ?? "K"                            // Kilograms
-               ?? space(1)                       // Further test
-               ?? space(1)                       // Disposal code
+               cStra += "K"                            // Kilograms
+               cStra += space(1)                       // Further test
+               cStra += space(1)                       // Disposal code
 
                set cent on
-               ??  strtran(dtoc(SM3DATA->dat&cOude),"/","") // Weighing date
+               cStra +=  strtran(dtoc(SM3DATA->dat&cOude),"/","") // Weighing date
                set cent off
 
-               ?? padl(ltrim(str(SM3DATA->mamoerspe)),4,"0") //Mass
-               ?? space(3)                       // Man group
-               ?? space(1)                       // Desexed
-               ?? space(4)                       // Hip height
-               ?? space(3)                       // Scrotum circ
-               ?? space(2)                       // Serving capacity
-               ?? space(2)                       // Number of serves
+               cStra += padl(ltrim(str(SM3DATA->mamoerspe)),4,"0") //Mass
+               cStra += space(3)                       // Man group
+               cStra += space(1)                       // Desexed
+               cStra += space(4)                       // Hip height
+               cStra += space(3)                       // Scrotum circ
+               cStra += space(2)                       // Serving capacity
+               cStra += space(2)                       // Number of serves
 
                // Analysis indicator
-               ?? "M"
+               cStra += "M"
 
                // Fill up
-               ?? space(128)
+               cStra += space(128)
 
-               // Carriage return etc
-               ?
+               cStra += chr(13) + chr(10)
+               nLen := fwrite(nHdel,cStra)
+
+               if nLen != len(cStra)
+                  fScrWBood(maxrow(),"File Write Error (Record A): "+ALLTRIM(STR(FERROR(),5,0)))
+                  break
+               endif
 
             endif
 
@@ -2310,59 +2343,18 @@ STATIC FUNCTION fDiskBrep
       enddo
 
       // Close the file
-      set console on
-      set alternate off
-      set alternate to
+      fclose(nHdel)
 
       // Test if file was created
       if !file(cFile)
+
          if cLanType() == "A"
             fScrBood(maxrow()-1,"Prestasielˆer is nie geskep nie!")
          else
             fScrBood(maxrow()-1,"Performance file was not created!")
          endif
-      else
 
-         // Display note on the screen
-         // if cLanType() == "A"
-         //    nBoxc := fBoxCent( 10, space(50), 7,"Elektroniese lˆer" )
-         //    if left(cFile,1) $ "AB"
-         //       // Disk
-         //       //             "         0         0         0         0         0"
-         //       @11, nBoxc say "'n Lˆer met die naam P"+substr(cTotNaam(),149,3)+alltrim(substr(cTotNaam(),125,4))+".DAT is op 'n"
-         //       @12, nBoxc say "disket in disketaandrywer "+upper(left(cFile,1))+": geskryf!"
-         //       @13, nBoxc say "Pos asseblief hierdie disket behoorlik verpak aan "
-         //       @14, nBoxc say "die betrokke Registrerende Owerheid."
-         //    else
-         //       // File
-         //       //             "         0         0         0         0         0"
-         //       @11, nBoxc say "'n Lˆer met die naam P"+substr(cTotNaam(),149,3)+alltrim(substr(cTotNaam(),125,4))+".DAT is in die"
-         //       @12, nBoxc say cMailTar()+" subgids op die"
-         //       @13, nBoxc say "hardeskyf geskryf!"
-         //       @14, nBoxc say "Heg asseblief hierdie lˆer aan 'n epos boodskap"
-         //       @15, nBoxc say "gerig aan die betrokke Registrerende Owerheid."
-         //    endif
-         //    fScrBood(maxrow()-1,"Prestasielˆer is suksesvol geskep!")
-         // else
-         //    nBoxc := fBoxCent( 10, space(50), 7,"Electronic file" )
-         //    if left(cFile,1) $ "AB"
-         //       // Disk
-         //       //             "         0         0         0         0         0"
-         //       @11, nBoxc say "A file with the name P"+substr(cTotNaam(),149,3)+alltrim(substr(cTotNaam(),125,4))+".DAT was created on a"
-         //       @12, nBoxc say "diskette in disk drive "+upper(left(cFile,1))+":!"
-         //       @13, nBoxc say "Package this diskette properly and post to the"
-         //       @14, nBoxc say "the relative Registering Authority."
-         //    else
-         //       // File
-         //       //             "         0         0         0         0         0"
-         //       @11, nBoxc say "A file with the name P"+substr(cTotNaam(),149,3)+alltrim(substr(cTotNaam(),125,4))+".DAT was created in the"
-         //       @12, nBoxc say cMailTar()+" subdirectory of the"
-         //       @13, nBoxc say "hard disk!"
-         //       @14, nBoxc say "Attach this file to an email message addressed"
-         //       @15, nBoxc say "to the relative Registering Authority."
-         //    endif
-         //    fScrBood(maxrow()-1,"Performance data file was succesfully created!")
-         // endif
+      else
 
          if nRout = 1
 
